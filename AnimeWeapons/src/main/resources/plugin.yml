@@ -1,0 +1,18 @@
+name: AnimeWeapons
+version: '${project.version}'
+main: dev.animeweapons.AnimeWeapons
+api-version: '1.21'
+author: AnimeWeapons
+description: 5 senjata custom bergaya anime (JJK, Demon Slayer, Bleach).
+commands:
+  animeweapons:
+    description: Perintah utama AnimeWeapons
+    aliases: [aw]
+    usage: /<command> <give|list|reload>
+permissions:
+  animeweapons.use:
+    description: Boleh memakai kemampuan senjata
+    default: true
+  animeweapons.admin:
+    description: Boleh memakai /animeweapons
+    default: op

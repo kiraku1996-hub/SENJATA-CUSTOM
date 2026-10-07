@@ -1,0 +1,7 @@
+BUILD OTOMATIS LEWAT GITHUB (tanpa install apa pun)
+1. Buat akun di github.com, klik New repository (nama bebas), centang Public.
+2. Klik "uploading an existing file", lalu seret SEMUA isi folder ini
+   (termasuk folder .github, src, dan pom.xml). Klik Commit changes.
+3. Buka tab Actions, tunggu workflow "Build AnimeWeapons" selesai (centang hijau, ~1-2 menit).
+4. Klik run tersebut, di bagian Artifacts unduh "AnimeWeapons-jar" (isinya AnimeWeapons.jar).
+5. Taruh AnimeWeapons.jar di folder plugins server Paper 1.21.11.
