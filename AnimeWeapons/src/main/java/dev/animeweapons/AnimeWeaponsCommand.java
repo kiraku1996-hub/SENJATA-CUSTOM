@@ -70,11 +70,9 @@ public final class AnimeWeaponsCommand implements CommandExecutor, TabCompleter 
                 if (target == null) {
                     sender.sendMessage(MM.deserialize("<red>Player tidak ditemukan / tidak online."));
                     return true;
-                }
-                ItemStack item = weapons.create(type);
-                Map<Integer, ItemStack> left = target.getInventory().addItem(item);
-                left.values().forEach(i -> target.getWorld().dropItemNaturally(target.getLocation(), i));
-                sender.sendMessage(MM.deserialize("<green>Memberikan <yellow>" + type.id() + "<green> ke " + target.getName()));
+               for (ItemStack i : left.values()) {
+    target.getWorld().dropItemNaturally(target.getLocation(), i);
+}
             }
             default -> help(sender, label);
         }
